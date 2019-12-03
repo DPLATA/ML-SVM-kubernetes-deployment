@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <title>This is my Flask api</title>
+  </head>
+  <body>
+    
+
+    <form class="" action="{{url_for('predict')}}" method="post">
+     <!--<input type="text" name="age" placeholder="age" required="required">
+	<input type="text" name="exang" placeholder="exercise induced angina" required="required">-->
+     <input type="text" name="sex" placeholder="sex" required="required">
+     <input type="text" name="cp" placeholder="chest pain type" required="required">
+     <input type="text" name="trestbps" placeholder="resting blood pressure mmHg" required="required">
+     <input type="text" name="chol" placeholder="chol mg/dl" required="required">
+     <input type="text" name="fbs" placeholder="fasting blood sugar" required="required">
+     <input type="text" name="restecg" placeholder="resting electrocardiographic result" required="required">
+     <input type="text" name="thalach" placeholder="max heart rate achieved" required="required">    
+     <input type="text" name="oldpeak" placeholder="ST depression induced by exercise relative to rest" required="required">
+     <input type="text" name="slope" placeholder="slope of the peak exercise ST segment" required="required">
+     <input type="text" name="ca" placeholder="flourospy colored vessels 0-3" required="required">
+     <input type="text" name="thal" placeholder="thal" required="required">
+
+     <button type="submit">Predicts</button>
+   </form>
+
+    {{ prediction_text }}
+
+  </body>
+</html>
