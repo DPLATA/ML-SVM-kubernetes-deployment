@@ -1,0 +1,51 @@
+.fondo{
+    background-image: url(imagen.png);
+    background-repeat: no-repeat;
+    background: url(imagen.png) no-repeat center center fixed;
+    background-size: 100% 100%;
+}
+.letra{
+    font-family: 'Bebas Neue', cursive; 
+    font-size: 16px;
+}
+.block{
+    font-family: 'Bebas Neue', cursive; 
+    display: inline-block;
+    margin-left: 55px;
+}
+.last-div{
+    position: relative;
+    top: -6px
+}
+
+.position{
+    position: relative;
+        left : 120px;
+}
+
+.boton {
+    position: relative;
+    left: 550px;
+    top: -60px;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: 'Bebas Neue', cursive; 
+    font-size: 20px;
+    background-color: #27AFAF;
+}
+
+.texto{
+    position: relative;
+    left: 850px;
+    top: -250px;
+   font-family: 'Bebas Neue', cursive; 
+    font-size: 20px;
+    
+   
+}
+
+.title{
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive; 
+}
+

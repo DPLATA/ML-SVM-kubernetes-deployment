@@ -1,31 +1,55 @@
 <!DOCTYPE html>
 <html lang="en" >
+   
   <head>
     <meta charset="utf-8">
-    <title>This is my Flask api</title>
+    <title>DETECTOR DE ENFERMEDADES CARDÍACAS</title>
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	
   </head>
-  <body>
-    
+  <body class ="fondo"> 
+      
+    <h1 align = "center"  class ="title">DETECTOR DE ENFERMEDADES CARDIACAS</h1> <br> 
+      
 
-    <form class="" action="{{url_for('predict')}}" method="post">
-     <!--<input type="text" name="age" placeholder="age" required="required">
-	<input type="text" name="exang" placeholder="exercise induced angina" required="required">-->
-     <input type="text" name="sex" placeholder="sex" required="required">
-     <input type="text" name="cp" placeholder="chest pain type" required="required">
-     <input type="text" name="trestbps" placeholder="resting blood pressure mmHg" required="required">
-     <input type="text" name="chol" placeholder="chol mg/dl" required="required">
-     <input type="text" name="fbs" placeholder="fasting blood sugar" required="required">
-     <input type="text" name="restecg" placeholder="resting electrocardiographic result" required="required">
-     <input type="text" name="thalach" placeholder="max heart rate achieved" required="required">    
-     <input type="text" name="oldpeak" placeholder="ST depression induced by exercise relative to rest" required="required">
-     <input type="text" name="slope" placeholder="slope of the peak exercise ST segment" required="required">
-     <input type="text" name="ca" placeholder="flourospy colored vessels 0-3" required="required">
-     <input type="text" name="thal" placeholder="thal" required="required">
+    <form class="" action="{{url_for('predict')}}" method="post" class ="letra">
+        <div class ="position">
+        <div class="block" class="letra">
+     <!--<input type="text" style="width : 120px" name="age" placeholder="age" required="required" class="letra"> <br> <br>-->
+     <input type="text" style="width : 120px"name="sex" placeholder="sex" required="required"class="letra">  <br> <br> 
+    <input type="text" style="width : 120px"name="chol" placeholder="chol mg/dl" required="required"class="letra">  <br> <br>
+     <input type="text" style="width : 120px"name="fbs" placeholder="fasting blood sugar" required="required"class="letra">  <br> <br> 
+        </div>
+         <div class="block">
+     <input type="text" style="width : 120px"name="cp" placeholder="chest pain type" required="required"class="letra">  <br> <br>
+     <input type="text" style="width : 120px"name="trestbps" placeholder="resting blood pressure mmHg" required="required"class="letra">  <br> <br> 
+    <input type="text" style="width : 120px"name="chol" placeholder="chol mg/dl" required="required"class="letra">  <br> <br>
+     <input type="text" style="width : 120px"name="fbs" placeholder="fasting blood sugar" required="required"class="letra">  <br> <br> 
+        </div>
+        <br>
+        <div class="block">
+     <input type="text" style="width : 120px"name="restecg" placeholder="resting electrocardiographic result" required="required"class="letra">  <br> <br>
+     <input type="text" style="width : 120px"name="thalach" placeholder="max heart rate achieved" required="required"class="letra">  <br> <br>  
+    <!--<input type="text" style="width : 120px"name="exang" placeholder="exercise induced angina" required="required"class="letra">  <br> <br>-->
+     <input type="text" style="width : 120px"name="oldpeak" placeholder="ST depression induced by exercise relative to rest" required="required"class="letra">  <br> <br> 
+        </div>
+        
+       
+        
+        <div class="block last-div">
+     <input type="text" style="width : 120px"name="slope" placeholder="slope of the peak exercise ST segment" required="required"class="letra"> <br> <br>
+     <input type="text" style="width : 120px"name="ca" placeholder="flourospy colored vessels 0-3" required="required"class="letra"> <br> <br>  
+    <input type="text" style="width : 120px"name="thal" placeholder="thal" required="required"class="letra">  <br> <br>
+            </div>
+        </div>
+        
 
-     <button type="submit">Predicts</button>
+     <button type="submit" style="width : 150px " class ="boton" >Predicts</button>
    </form>
-
+      <div class="texto">
     {{ prediction_text }}
+          </div>
 
   </body>
 </html>
