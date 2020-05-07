@@ -12,6 +12,7 @@ COPY Pipfile Pipfile.lock bootstrap.sh ./
 
 # Install API dependencies
 RUN pipenv install
+RUN pipenv install numpy
 
 # Add application code.
 COPY . ./
